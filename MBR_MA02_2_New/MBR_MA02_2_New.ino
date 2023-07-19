@@ -17,19 +17,7 @@
 #define led_connection 42
 #define led_published 41
 
-const char* ssid = "MIC_2.4GHz";
-const char* password = "999999999";
-const char* mqtt_server = "192.168.100.136";
-
-//////////////////////SETUP/////////////////////////
-IPAddress local_IP(192, 168, 100, 150); // Static IP address192.168.100.164
-IPAddress gateway(192, 168, 100, 1);    // Gateway IP address
-IPAddress subnet(255, 255, 255, 0);     // subnet
-
-char Machine_no[] = "TB01";
-//////////////////////SETUP/////////////////////////
-
-/*const char* ssid = "NHT_DX";
+  const char* ssid = "NHT_DX";
   const char* password = "nhtmic@admin";
   //const char* ssid = "TP-Link_2B32";
   //const char* password = "58252017";
@@ -41,7 +29,7 @@ char Machine_no[] = "TB01";
   IPAddress subnet(255, 255, 255, 0);     // subnet
 
   char Machine_no[] = "MBR_MA03";
-  //////////////////////SETUP/////////////////////////*/
+  //////////////////////SETUP/////////////////////////
 
 WiFiClient espClient;
 PubSubClient client(espClient);
