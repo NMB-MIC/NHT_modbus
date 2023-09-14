@@ -463,7 +463,7 @@ loop1: delay(1);
   int h = actionhour.toInt();
   int m = actionmin.toInt();
   int s = actionsec.toInt();
-  if (h == 7 && m == 0 && s <= 10 )
+  if (h == 7 && m == 0 && s <= 20 )
   {
     SPIFFS.format();
     Serial.println("*****************************");
